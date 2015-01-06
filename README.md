@@ -1,11 +1,11 @@
-# Linux support tool/driver for PCE-PB-N-series scales
+# Linux support for PCE-PB-N-series scales
 
-This projects aims to implement a tool/driver to add 
-linux support for PCE Instruments PB-N-series scales 
-like  PCE-PB 60N  and PCE-PB 150N.
+This projects aims to implement linux support 
+for PCE Instruments PB-N-series scales like the 
+PCE-PB 60N and PCE-PB 150N.
 
-This software is used by the BeeMon project.
-See the BeeMon source code: https://github.com/kyr0/beemon
+This software is primarily developed and used by the BeeMon project.
+@see https://github.com/kyr0/beemon
 
 The development team likes to thank PCE Instruments
 for their support.

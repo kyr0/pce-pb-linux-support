@@ -12,9 +12,6 @@ for their support.
 
 ## License
 
-This is open source software.
-http://opensource.org/licenses/BSD-2-Clause
-
 Copyright (c) 2015, Aron Homberg and the BeeMon team.
 All rights reserved.
 

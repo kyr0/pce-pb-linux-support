@@ -8,7 +8,7 @@ This software is primarily developed and used by the BeeMon project.
 @see https://github.com/kyr0/beemon
 
 The development team likes to thank PCE Instruments
-for their support.
+for supporting us.
 
 ## License
 

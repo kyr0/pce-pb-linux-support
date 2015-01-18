@@ -1,0 +1,23 @@
+{
+  "name": "pcepbn",
+  "version": "0.1.0",
+  "description": "PCE Instruments PB-N scale command line interface (CLI)",
+  "author": "Aron Homberg <info@aron-homberg.de>",
+  "keywords": [
+    "http"
+  ],
+  "homepage": "https://github.com/kyr0/pce-pb-linux-support",
+  "dependencies": {
+    "optimist": "0.3.x",
+    "serialport": "1.4.x"
+  },
+  "bin": {
+    "pcepbn": "pcepbn.sh"
+  },
+  "main": "lib/pcepbn",
+  "license" : "BSD",
+  "engines": {
+    "node": ">= 0.10.*"
+  },
+  "repository": "https://github.com/kyr0/pce-pb-linux-support"
+}

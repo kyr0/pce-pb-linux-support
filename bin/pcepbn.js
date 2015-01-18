@@ -27,7 +27,4 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-var path = require('path');
-
-// Run
-require(path.resolve(__filename, '../../lib/pcepbn.js')).cli();
+require(__dirname + '/../lib/pcepbn').cli();

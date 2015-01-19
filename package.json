@@ -1,6 +1,6 @@
 {
   "name": "pcepbn",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "PCE Instruments PB-N scale command line interface (CLI), UNIX, LINUX, Mac OS X, Windows support",
   "author": "Aron Homberg <info@aron-homberg.de>",
   "keywords": [

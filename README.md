@@ -1,14 +1,19 @@
-# Command line interface (CLI) for PCE-PB-N-series scales
+# Command Line Interface (CLI) for PCE-PB N-series scales
 
-This projects implements LINUX and Mac OS X support 
-for PCE Instruments PB-N-series scales PCE-PB 60N and PCE-PB 150N.
+This program allows you to auto-discover and read PCE-PB N-scale 
+devices attached to your computer. It currently supports to read
+weight measurement values (positive, negative) in various units,
+one-time and continuously for one or many scales at the same time.
 
-This program allows you to discover PCE PB N scale devices attached to any LINUX/Mac OS X computer
-and to fetch the latest measurement values (one-time and continuously).
+It is tested to be working flawless on LINUX and Mac OS X. If you
+are interested in Windows or UNIX support, please see the "Untested" notice
+below. There is a chance to manage this, without code changes.
 
-This software is primarily developed and used by the BeeMon project (https://github.com/kyr0/beemon)
+This software is primarily being developed and used by the 
+BeeMon - Automated BeeHive monitoring project (https://github.com/kyr0/beemon)
 
-The development team likes to thank PCE Deutschland GmbH for supporting us!
+The development team likes to thank PCE Deutschland GmbH a lot 
+for supporting us actively!
 
 ## Pre-requirements
 
@@ -33,7 +38,7 @@ If the output is somewhat like:
     
 The CP210x driver has been already/successful installed.
     
-### Driver installation test: Linux/Unix
+### Driver installation test: LINUX/UNIX
    
 Connect the PCE PB-N scale to your computer.
 Open a shell and execute:
@@ -119,20 +124,44 @@ For Debian/Ubunu system you can install these tools via a single command:
 
     sudo apt-get install build-essential
 
-## Untested: Support for Microsoft Windows / Get involved :)
+## Untested: Support for Microsoft Windows and UNIX. Please get involved! :)
 
 The under-laying implementation, runtime and libraries should allow
-this program to also run on Microsoft Windows 7, 8 and 8.1
+this program to also run on platforms like Microsoft Windows 7, 8, 8.1
+and a lot of UNIXes out there.
 
+For Windows:
+
+- After the CP210x driver install has been finished...
 - Install Visual Studio Express 2013 for Windows Desktop.
 - Install node.js 0.10.x matching the bitness (32 or 64) of your operating system.
 - Install Python 2.7.6 matching the bitness of your operating system. 
   For any questions, please refer to their FAQ. Default settings are perfect.
 - Open the 'Visual Studio Command Prompt' and add Python to the path.
 
-Then proceed with the installation of "pcepbn" using npm (see above).
-Try to call the program using "node lib/pcepbn.js" and file a ticket
-if you managed it / faced issues. Thanks :-)
+For UNIX:
+
+- After the CP210x driver install has been finished...
+- Setup a build environment featuring gcc, make etc. pp.
+- Download the sources of Node.js and compile them
+
+Then proceed with the installation of "pcepbn" using npm,
+but locally (without the -g option; this will install the CLI
+tool in the current working directory)
+
+    npm install pcbpbn
+     
+After all, you should find a file like: node_modules/pcepbn/bin/pcepbn.js.
+
+Try to call it using "node" or "nodejs" (depends on the OS):
+
+    node node_modules/pcepbn/bin/pcepbn.js
+    
+It should print the help screen. 
+Just append any option available to that command (like discover, listen).
+
+We would be happy to hear from you, if you managed to run this
+tool on a non-officially-supported operating system/architecture! :-)
 
 ## License
 

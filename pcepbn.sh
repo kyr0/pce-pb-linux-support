@@ -12,13 +12,14 @@ SCRIPT_PATH=`pwd`;
 popd  > /dev/null
 
 # use nodejs executable if available
-if node -v >/dev/null 2>&1; then
-    node $SCRIPT_PATH/bin/pcepbn.js $1 $2 $3 $4 $5
-    exit 0
-fi
-
-# use nodejs executable if available
 if nodejs -v >/dev/null 2>&1; then
-    nodejs $SCRIPT_PATH/bin/pcepbn.js $1 $2 $3 $4 $5
+    nodejs $SCRIPT_PATH/bin/pcepbn.js "$@"
     exit 0
+elif node -v >/dev/null 2>&1;
+then
+    # use node executable if nodejs isn't available
+    node $SCRIPT_PATH/bin/pcepbn.js "$@"
+    exit 0
+else
+    echo "No Node.js executable found. Please fix your Node.js installation."
 fi

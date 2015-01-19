@@ -1,10 +1,10 @@
 {
   "name": "pcepbn",
-  "version": "0.1.1",
-  "description": "PCE Instruments PB-N scale command line interface (CLI), LINUX, Mac OS X support",
+  "version": "0.1.2",
+  "description": "PCE Instruments PB-N scale command line interface (CLI), UNIX, LINUX, Mac OS X, Windows support",
   "author": "Aron Homberg <info@aron-homberg.de>",
   "keywords": [
-    "pce", "pce-pb", "scale", "automation", "linux", "macosx", "cli", "serialport", "weight", "measurement"
+    "pce", "pce-pb", "scale", "automation", "linux", "unix", "arm", "macosx", "cli", "serialport", "weight", "measurement"
   ],
   "homepage": "https://github.com/kyr0/pce-pb-linux-support",
   "dependencies": {
